@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn workspaces foreach --parallel run start"
+    "start": "yarn workspaces foreach --parallel --interlaced --verbose run start"
   },
   "main": "index.js",
   "license": "MIT",

@@ -16,7 +16,7 @@ const config: Configuration = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      templateContent: `<html><body><div id="${appId}"></div></body></html>`,
+      template: './src/index.html',
     }),
     new EnvironmentPlugin({
       APP_ID: appId,
