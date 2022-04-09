@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import { SuspenseWithStartTransition } from '@react-18/components/SuspenseWithStartTransition/SuspenseWithStartTransition';
 import { Suspense } from '@react-18/components/Suspense/Suspense';
 import { StartTransition } from '@react-18/components/StartTransition';
 import { BatchingWithFlushSync } from '@react-18/components/BatchingWithFlushSync';
@@ -12,10 +13,11 @@ const Components = {
   BatchingWithFlushSync,
   StartTransition,
   Suspense,
+  SuspenseWithStartTransition,
 };
 
 export const App: FC = () => (
   <div>
-    <Components.Suspense />
+    <Components.SuspenseWithStartTransition />
   </div>
 );
