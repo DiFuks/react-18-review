@@ -1,3 +1,13 @@
 import { FC } from 'react';
 
-export const App: FC = () => <div>Hello from React 18</div>;
+import { Batching } from '@react-18/components/Batching';
+
+const Components = {
+  Batching,
+};
+
+export const App: FC = () => (
+  <div>
+    <Components.Batching />
+  </div>
+);
