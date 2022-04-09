@@ -14,4 +14,4 @@ const container = document.querySelector(`#${appId}`);
 
 render(<App />, container);
 
-log('Hello from react');
+log(`Hello from react ${React.version}`);

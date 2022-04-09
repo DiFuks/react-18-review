@@ -1,6 +1,7 @@
-import { log } from '@react-18/utils/log'
 import { createRoot } from 'react-dom/client';
+import React from 'react';
 
+import { log } from '@react-18/utils/log';
 import { App } from '@react-18/App';
 
 const appId = process.env.APP_ID;
@@ -17,6 +18,6 @@ if (!container) {
 
 const root = createRoot(container);
 
-log('Hello from react');
+log(`Hello from react ${React.version}`);
 
 root.render(<App />);
