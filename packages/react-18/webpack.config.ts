@@ -35,7 +35,6 @@ const config: Configuration = {
     ],
   },
   devServer: {
-    open: true,
     port: 8_018,
     hot: true,
   },

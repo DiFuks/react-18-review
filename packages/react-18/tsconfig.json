@@ -2,6 +2,8 @@
   "extends": "../../tsconfig.packages.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "preserve",
     "paths": {
       "@react-18/*": ["./src/*"]
     }

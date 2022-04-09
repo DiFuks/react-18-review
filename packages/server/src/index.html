@@ -1,0 +1,32 @@
+<html>
+<head>
+    <style>
+        body {
+          display: flex;
+          margin: 0;
+        }
+
+        body > div {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+        }
+
+        body > div > iframe {
+          width: 100%;
+          height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>React 17</h3>
+        <iframe src="http://localhost:8017"></iframe>
+    </div>
+    <div>
+        <h3>React 18</h3>
+        <iframe src="http://localhost:8018"></iframe>
+    </div>
+</body>
+</html>
