@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn workspaces foreach --parallel --interlaced --verbose run start"
+    "start": "yarn workspaces foreach --parallel --interlaced --verbose run start",
+    "lint:fix": "eslint \"{**/*,*}.{ts,tsx,json}\" --fix"
   },
   "main": "index.js",
   "license": "MIT",
